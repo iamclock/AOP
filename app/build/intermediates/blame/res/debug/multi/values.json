@@ -1,0 +1,124 @@
+[
+    {
+        "outputFile": "/home/users/s15-21/StudioProjects/Shredder/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 52,
+                    "endOffset": 217
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 222,
+                    "endColumn": 44,
+                    "endOffset": 262
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 267,
+                    "endColumn": 45,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 44,
+                    "endOffset": 353
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 262,
+                        "endColumn": 44,
+                        "endOffset": 302
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 358,
+                    "endColumn": 61,
+                    "endOffset": 415
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 420,
+                    "endLine": 15,
+                    "endColumn": 12,
+                    "endOffset": 706
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 711,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 866
+                },
+                "from": {
+                    "file": "/home/users/s15-21/StudioProjects/Shredder/app/src/main/res/values/styles.xml"
+                }
+            }
+        ]
+    }
+]
