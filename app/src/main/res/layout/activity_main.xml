@@ -49,20 +49,27 @@
         android:textStyle="bold"
         android:text="@string/topic_not_set" />
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/scroll"
-        android:layout_width="wrap_content"
-        android:layout_height="350dp">
 
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:fillViewport="true"
+        >
 
     <TextView
         android:id="@+id/chat_area"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0" />
+        android:layout_weight="0"
+        android:layout_gravity="bottom"/>
 
 
 </ScrollView>
+
+
 
 
     <TextView

@@ -28,7 +28,6 @@ public class Receiver implements Runnable {
 			String line = activity.getSockIn().readLine();
 			while (line != null) {
 				activity.addMessage(line.trim());
-				activity.addMessage(line.trim());
 				activity.runOnUiThread(new Runnable() {
 					public void run() {
 						activity.updateText();

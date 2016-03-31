@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 		messages = new LinkedList<String>();
 		ConnectTask connectTask = new ConnectTask(this);
 		connectTask.execute("isc.tsu.ru", 1987);
-		nick = "Anonymous";
+		nick = "Anonymous: ";
 	}
 
 	
@@ -73,8 +73,7 @@ public class MainActivity extends Activity {
 			//главный экран?
 			for (String line: messages) {
 				processMessage(line);
-				text.append(line);
-				text.append("\n");
+				text.append(line+"\n");
 			}
 			messages.clear();
 		}

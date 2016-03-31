@@ -6,6 +6,6 @@
     <string name="topic_not_set">Топик не установлен</string>
     <string name="send_button">Приём</string>
     <string name="set_nick">Заникуй</string>
-
+    <string name="action_filter">Filter</string>
 
 </resources>
