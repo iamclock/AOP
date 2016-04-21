@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:weightSum="1">
 
 
 <LinearLayout
@@ -50,57 +51,42 @@
         android:text="@string/topic_not_set" />
 
 
+    <ScrollView
+        android:layout_width="353dp"
+        android:layout_height="374dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="bottom">
 
+        <TextView
+                android:id="@+id/chat_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+            android:gravity="bottom" />
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/listViewContent"
-        android:layout_width="wrap_content"
-        android:layout_height="350dp"
-        android:fillViewport="true"
-        >
+    </ScrollView>
 
-    <TextView
-        android:id="@+id/chat_area"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:layout_gravity="bottom"/>
-
-
-</ScrollView>
-
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_weight="0" />
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0" >
+        android:layout_width="345dp"
+        android:layout_height="match_parent">
 
-	    <EditText
-	        android:id="@+id/input_area"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:inputType="textAutoCorrect" />
-	    
-	    <Button
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="0"
-	        android:onClick="sendMessage"
-	        android:text="@string/send_button" />
+        <EditText
+            android:id="@+id/input_area"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect"
+            android:hint="Enter Your Massage"
+            android:layout_gravity="bottom" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="@string/send_button"
+            android:layout_gravity="bottom" />
     </LinearLayout>
-
 
 
 </LinearLayout>
