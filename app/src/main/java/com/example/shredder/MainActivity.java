@@ -93,7 +93,9 @@ public class MainActivity extends Activity {
 	public boolean setNick(View view) {
 		EditText editText = (EditText) findViewById(R.id.nick_area);
 		String text = editText.getText().toString();
-		_setNick(text);
+		if ( !text.equals("") ) {
+			_setNick(text);
+		}
 		editText.setText("");
 		return true;
 	}
