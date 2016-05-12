@@ -65,7 +65,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-            android:gravity="bottom" />
+        />
+            <!--
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:gravity="bottom"
+            -->
+
 
 
     
@@ -82,7 +88,7 @@
 
         <EditText
             android:id="@+id/input_area"
-            android:layout_width="253dp"
+            android:layout_width="245dp"
             android:layout_height="wrap_content"
             android:inputType="textAutoCorrect"
             android:hint="Enter Your Massage"

@@ -3,10 +3,13 @@ package com.example.shredder;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+//import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+//import android.widget.ScrollView;
+//import android.view.View.OnFocusChangeListener;
 
 import java.io.BufferedReader;
 import java.io.PrintWriter;
@@ -77,9 +80,24 @@ public class MainActivity extends Activity {
 			messages.clear();
 		}
 		textView.setText(text.toString());
-		// textView = (TextView) textView.scrollTo(0, textView.getBottom());
-		// ScrollView sv = textView.scrollTo(0, sv.getBottom());
-		// textView = (textView) sv;
+		/*
+		final ScrollView scroller = (ScrollView) textView;
+		scroller.setOnFocusChangeListener(new OnFocusChangeListener() {
+
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				if (hasFocus) {
+					scroller.fullScroll(View.FOCUS_DOWN);
+				}
+			}
+		});
+		*/
+		/*
+		TODO: попробовать раскомментировать
+		textView = textView.scrollTo(0, textView.getBottom());
+		ScrollView sv = textView.scrollTo(0, sv.getBottom());
+		textView = (textView) sv;
+		*/
 	}
 
 	public void processMessage(String msg) {
