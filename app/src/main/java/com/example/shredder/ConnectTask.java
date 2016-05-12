@@ -23,7 +23,7 @@ public class ConnectTask extends AsyncTask<Object, Void, Void> {
 	private BufferedReader sockIn;
 	private PrintWriter sockOut;
 	private ProgressDialog dialog;
-	private String nick;
+	//private String nick;
 
 	public ConnectTask(Activity activity) {
 		super();

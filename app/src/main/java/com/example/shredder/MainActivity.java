@@ -1,6 +1,8 @@
 package com.example.shredder;
 
 import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MainActivity extends Activity {
@@ -19,6 +22,16 @@ public class MainActivity extends Activity {
 	private PrintWriter sockOut;
 	private String nick;
 
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		this.nick = "Anonymous: ";
+		setContentView(R.layout.activity_main);
+		messages = new LinkedList<String>();
+		ConnectTask connectTask = new ConnectTask(this);
+		connectTask.execute("isc.tsu.ru", 1987);
+	}
 
 	public Socket getSocket() {
 		return sock;

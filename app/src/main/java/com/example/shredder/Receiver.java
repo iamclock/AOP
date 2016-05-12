@@ -13,17 +13,7 @@ public class Receiver implements Runnable {
 	}
 	
 	public void run() {
-		//activity._setNick("Anonymous");
-		/*
-		try {
-			String nick = activity.getSockIn().readLine();
-			if(nick != null)
-				activity.setNick(nick);
-		} catch (IOException e) {
-			//e.printStackTrace();
-		}*/
-
-
+		activity._setNick("Anonymous");
 		try {
 			String line = activity.getSockIn().readLine();
 			while (line != null) {
